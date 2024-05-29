@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        .navbar {
+            overflow: hidden;
+            background-color: #fff7f7;
+            position: fixed; 
+            top: 0;
+            width: 100%;
+            z-index: 1000; 
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .navbar a {
+            float: left;
+            display: block;
+            color: #020202;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        
+        
+        .content {
+            text-align: center;
+        }
+        
+        .centered {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .centered img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .centered .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+        }
+        
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px; 
+        }
+        
+        .image-grid .centered {
+            width: calc(25% - 20px);
+            margin: 10px;
+            max-width: 100%;
+            height: auto;
+            position: relative;
+        }
+        
+        @media (max-width: 768px) {
+            .image-grid .centered {
+                width: calc(100% - 20px); 
+            }
+
+        }
+        
+        @media (max-width: 480px) {
+            .image-grid .centered {
+                width: calc(100% - 20px); 
+            }
+         
+        }
+     
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <div>
+        <a href="#"> B R Architects</a>
+    </div>
+    <div>
+        <a href="#">Projects</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- <div style="display: flex;">
+        <h1> B R Architects </h1>
+    </div>
+    <div style="display: ;">
+        <ul class="list" >
+            <l>Projects</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div> -->
+   
+</div>
+
+<div class="content">
+    <div class="centered">
+        <img src="https://www.w3schools.com/w3images/architect.jpg" alt="Image">
+        <div class="text" style="background-color: rgb(99, 94, 94) ; padding: 10px;">B R</div>
+      
+    </div>
+  
+    <h1 style="text-align: start; margin: 40px;">Projects</h1>
+    <hr style="width: 400px; margin-left: 0;">
+   
+
+    <div class="image-grid">
+        <div class="centered">
+            <img src="https://www.w3schools.com/w3images/house5.jpg" alt="Image 1">
+            <div class="text" style="background-color: black; padding: 10px;">Summer House</div>
+        </div>
+        <div class="centered">
+            <img src="https://www.w3schools.com/w3images/house2.jpg" alt="Image 2">
+            <div class="text" style="background-color: black; padding: 10px;">Brick House</div>
+        </div>
+        <div class="centered">
+            <img src="https://www.w3schools.com/w3images/house3.jpg" alt="Image 3">
+            <div class="text" style="background-color: black; padding: 10px;">Renovated</div>
+        </div>
+        <div class="centered">
+            <img src="https://www.w3schools.com/w3images/house4.jpg" alt="Image 4">
+            <div class="text" style="background-color: black; padding: 10px;">Barn House</div>
+        </div>
+        <div class="centered">
+            <img src="https://www.w3schools.com/w3images/house2.jpg" alt="Image 5">
+            <div class="text" style="background-color: black; padding: 10px;">Summer House</div>
+        </div>
+        <div class="centered">
+            <img src="https://www.w3schools.com/w3images/house5.jpg" alt="Image 6">
+            <div class="text" style="background-color: black; padding: 10px;">Brick House</div>
+        </div>
+        <div class="centered">
+            <img src="https://www.w3schools.com/w3images/house4.jpg" alt="Image 7">
+            <div class="text" style="background-color: black; padding: 10px;">Renovated</div>
+        </div>
+       <div class="centered">
+            <img src="https://www.w3schools.com/w3images/house3.jpg" alt="Image 8">
+            <div class="text" style="background-color: black; padding: 10px;">Barn House</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
